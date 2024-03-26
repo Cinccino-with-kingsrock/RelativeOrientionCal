@@ -118,3 +118,4 @@ results =[np.dot(matrix,np.transpose(XYZ[i])) for i, matrix in enumerate(iphone_
 
 with open('D:\\大學用\\大三\\下學期\\攝影測量實習\\chp2\\新的\\relative orientation2.txt',mode= "w") as f:
     for i, result in enumerate(results, start=1):
+        f.write(f"{result}\n")
